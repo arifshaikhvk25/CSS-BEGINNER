@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS beginner</title>
+
+    <link rel="stylesheet" href="style.css"> <!--(3) link:css -> two ways of adding css make file like style.css or do it in head of html using style tag-->
+
+    <!-- <style>
+
+        body{
+            background-color:rgb(6, 5, 5);     /*(2)*/
+        }
+        
+    </style>      (1) -->
+
+    <!-- <style>
+        #first{                                               /* (11) from # -> we target id */
+            background-color: grey;
+        }
+
+        .bg-blue{
+            background-color: rgb(90, 90, 221);              /*(12) from . -> we target class */
+            color: rgb(147, 212, 16);                        /*(13) color will give a text color */
+        }
+
+    </style> -->
+
+</head>
+<body>
+    
+    <div id="first">                       <!--(4) div#first will make div id -> <div id="first"></div> -->
+    first    
+
+    </div>            
+
+    <div id="second">                      <!--(5) #second will also make div id -> <div id="second"></div> -->
+    second
+        
+    </div>
+
+    <div id="third">                       <!--(6) div# will make a div container with id-> <div id=""</div>-->
+    third
+        
+    </div>
+
+    <section class="red">                  <!--(7) section.red -> <section class="red"></section> -->
+    red
+
+    </section>        
+
+    <section class="bg-blue">              <!--(8) section. -> <section class="" </section>-->
+        blue
+
+    </section>            
+
+    <section class="red bg-blue border-purple">          <!--(10)-->
+        red bg-blue border-purple
+
+    </section>
+    
+</body>
+</html>
