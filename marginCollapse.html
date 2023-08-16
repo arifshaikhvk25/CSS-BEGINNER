@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin CXollapse</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }  
+        .box1{
+            background-color: rgb(176, 29, 29);
+            margin: 20px;
+            height: 260px;
+            width: 160px;
+        }
+        .borderbox{
+            background-color: rgb(41, 41, 212);
+            /* margin: 20px; */        /*margin is not needed in borde-box*/
+            padding: 20px;
+            width: 100%;
+            border: 5px double rgb(7, 10, 0);
+            box-sizing: content-box;
+            box-sizing: border-box;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sed repudiandae, tempore dolor libero laborum ratione porro atque.
+
+        <div class="borderbox"> box-sizing border-box </div>
+    </div>
+
+    
+</body>
+</html>

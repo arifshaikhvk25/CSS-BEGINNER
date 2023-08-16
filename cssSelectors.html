@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+
+    <!-- <link rel="stylesheet" href="style.css">      (17) -->
+
+    <style>                                                              /*(18) */
+        h1{
+            color: brown;                                             /* (19) */
+        }
+
+        div{
+            background-color: rgb(162, 135, 102);                     /* (20) */
+        }
+
+        #red, h2{                                                   /*(22) */
+            color: gold;
+            background-color: black;
+        }
+
+        .green{                                              /*(27) */
+            background-color: rgb(205, 184, 145);
+            color:rgb(84, 17, 84);
+            border: rgb(243, 208, 5);
+        }
+
+        *{                                                /*(29) * -> is a universal selector this change the whole page */ 
+           margin:  30;
+           padding: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div>                                                 <!--(20)-->
+        <h1>CSS Selectors Page</h1>                       <!--(19)-->
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A qui est quibusdam laudantium eligendi. Voluptatum dolorem laborum, pariatur doloremque consectetur expedita rem nostrum alias nisi!   <!--(21)-->
+        </p>
+
+        <h1>Another Css Selectors</h1>                    <!--(23)-->
+
+        <div id="red"> div # red id </div>               <!--(22)-->
+
+        <span class="green">first tag</span>                      <!--(24)-->
+
+        <span class="green">second tag</span>                       <!--(25)-->
+
+        <span class="green">third tag</span>            <!--(26)-->
+
+        <h2> this is  for test #red, h2 this will make the second heading like the div id red</h2>   <!--(28)-->
+
+    </div>
+    
+</body>
+</html>
