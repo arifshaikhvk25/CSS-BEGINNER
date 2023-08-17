@@ -1,0 +1,63 @@
+<!-- display flex -> -->
+<!-- flex-direction -> default row , we can make column ,column-reverse. row -reverse -->
+<!-- flex-wrap -> this will wrap acording to screen eg if we decrease screen size it will get wrap -->
+<!-- justify-content -> doubt  -->
+<!-- align-contents-> aligns a flex container lines when there is a extra space cross axis -->
+<!-- align-items ->  aligns flex container with the space in cross axis -->
+<!-- order -> initial value will be 0 we can give keep it order wise eg box1 at order 4  -->
+<!-- align-self -> is used in the particular item in which the property is used that will move -->
+<!-- flex-grow -> it wil grow the width of the box its depends upon the flex direction if the flex direction is in row its will grow the width -->
+<!-- flex-shrink -> this will shrink the size of the box -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox.html</title>
+
+    <style>
+        .container{
+            background-color: aquamarine;
+            height: 100vh;
+            display: flex;
+            flex-direction:row;    /*  this will render the row*/
+            flex-wrap:wrap;
+            justify-content:center;
+            align-items:center;  /*this will  aligns the space in cros axis*/
+           /* align-content: center;   this wil reomve the space in cross axis */
+            
+        }
+
+        .box1{
+            /* width: 25vw; */
+            height: 20vh; 
+            border: 3px solid black;
+            background: red;
+            order: 4;                  /* this is will keep the box 1 at 4th order*/
+           /* align-self:flex-end;*/      /*is used to move the particular item*/
+            flex-grow:2 ;               /* it will grow the width of the box but it depends upon the flex direction*/
+            flex-shrink: 1;              /* it will shrink the box*/
+
+        }
+
+        .box2{
+            /* width: 25vw; */
+            height: 20vh;
+            border: 3px solid black;
+            background: yellow;
+            flex-grow: 1;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box1">flex box 1</div>
+        <div class="box2">flex box 2</div>
+        <div class="box2">flex box 2b</div>
+        <div class="box2">flex box 2c</div>
+    </div>
+</body>
+</html>

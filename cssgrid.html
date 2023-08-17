@@ -1,0 +1,47 @@
+<!-- display Grid  -->
+<!-- grid row gap -> it gives the gap in row  -->
+<!-- grid column gap -> gives gap in column-->
+<!-- grid-template-columns: auto auto; -> auto will make the column eg{auto auto will give the two clumn}it gives the width to the particular coumn and how much column will be there in grid layout we can give the particular width to the columns 25px 2px auto auto wil take the rest of the width -->
+<!-- grid gap property -> shorthand of row and column if one value is given then it will set for both row and column -->
+<!-- grid-template-rows -> gives the height to the row -->
+<!-- justify-content -> keep the content to start end center it moves horizontal -->
+<!-- align-content ->  keep the content to start end center it moves vertically -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid </title>
+    <style>
+        .container{                           /* grid container is gold whole container and grid item is class item 1,2,3,4*/
+            display: grid;
+            height: 25vh;
+            background: gold;
+            /*grid-row-gap: 5px;*/                              /* it gives the gap in row*/
+            /*grid-column-gap: 2px;                           /* it gives the gap in column*/
+            grid-gap: 5px ;                                /*shorthand row column if one value is given that will set for both*/
+            grid-template-columns: 18vw 19vw 25vw auto;     /* auto will make the columns three auto will make the three column and gives the width to the particular column we can give width by 25px 5px auto auto will take the rest of the width*/
+            grid-template-rows: 18px 25px;                  /* gives the height to the row*/
+            justify-content:space-between;                  /* used to align whole grid inside the container horizontal*/
+            align-content:center;                           /* used to vertically align whole grid inside the container*/
+
+        }
+
+        .item{
+            background:burlywood;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      
+    </div>
+</body>
+</html>

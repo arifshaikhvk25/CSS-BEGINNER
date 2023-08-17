@@ -1,0 +1,34 @@
+<!-- @media screen is used to make the responsive layout for any tablet phone computer etc to work on different devicesk acording to it  -->
+<!-- eg @media screen and (max-width:800px) this css will apply if the condition is true eg if the width of the page is less than 0 to 800px then this css will apply if its width size is more than 800px or given condition it wont apply-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <style>
+        .container{
+            background:skyblue;
+            height: 25vh;
+        }
+
+        @media screen and (max-width:800px) {  /* this css will apply when the given condition will be true eg if the width of the page will be less than 0 to 800px then this css will apply */
+            body{
+                background:lightgreen;
+            }
+
+            .container{
+                background:rgb(213, 237, 94);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quis minus obcaecati asperiores, veritatis fugit. Dolorum nam eius sit iusto fugit illo quod hic itaque?
+    </div>
+</body>
+</html>

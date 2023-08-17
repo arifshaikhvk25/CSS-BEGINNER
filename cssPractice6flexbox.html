@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6 Flex box Practice Set</title>
+
+    <style>
+        *{
+            margin: 0;
+        }
+
+        header{
+            background: #000;
+            color:white;
+        }
+
+        ul{
+            padding: 15px;
+        }
+
+        li{
+            list-style:none;
+            display: inline;
+            padding: 0px 30px;
+        }
+
+        .left{
+            /* float: left; */    /* float cant be used in display flex*/
+            background:blue;
+            width: 25vw;
+            height: 25vh;
+        }
+
+        .right{
+            /* float: right; */
+            background:green ;
+            width: 25vw;
+            height: 25vh;
+        }
+
+        .container{
+            display: flex;
+            justify-content:space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contat</li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptas sit at cupiditate iusto obcaecati voluptatum voluptatem placeat?</div>
+        <div class="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque libero exercitationem quos est amet omnis, suscipit, voluptatum eum enim, rem laborum odit. Veniam, sint quaerat.</div>
+    </div>
+</body>
+</html>

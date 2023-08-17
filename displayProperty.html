@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+
+    <style>
+        .box1{
+            background: black;
+            color: aliceblue;
+            width:1105px; 
+             height: 70px; 
+            /* display: inline;*/           /* display inline take required space width and height no line breaks before after (width/height) (top bottom margin/padding) not allowed */
+            margin: 5px; 
+            padding: 5px;
+            /*display: inline-block;*/      /* display inline block setting margin padding width height are allowed */
+           /* display: none; */             /* display none will remove the elemnt */
+           /*visibility: hidden; */             /* display hidden will hide the element and reserved the place */
+           text-align: center;               /* text-align will move the text to center right left not the whole div container */
+
+        }
+        .box2{
+            background: green;
+            color: black;
+            height: 150px;
+            width: 215px;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi vel expedita atque ab suscipit facilis! Dolore, et nihil.</div>
+    <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores minima ipsa, alias modi nam porro hic iste repellat illum repudiandae excepturi vero aut, officia neque!v>
+    
+</body>
+</html>

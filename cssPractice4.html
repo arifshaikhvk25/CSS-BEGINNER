@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4 Practice</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">  <!--added from the google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            background: black;
+            color: white;
+            height:88px;
+            text-align: center;
+            font-size:3ch;
+        }
+
+        .navbar ul li a {          /* removes the links under line   */
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .navbar ul li{
+            display:inline-block;
+            margin: 25px;
+        }
+
+        .right{
+            background: rgb(227, 21, 21);
+            color: black;
+            height: 30vh;
+            display: inline-block;  /* display: inline-block; setting margin padding width height are allowed */
+            /* width: 555px; */
+            width: 50%;
+            height: 330px;
+            font-size: 125%;
+            font-weight: bolder;
+            font-style: oblique;
+        }
+
+        .left{
+            background: rgb(44, 138, 44);
+            color: rgb(32, 10, 10);
+            height: 30vh;
+            display: inline-block;
+            /* width: 555px; */
+            width: 50%;
+            height: 330px;
+            font-size: 125%;
+            font-style: italic;
+            font-weight: bolder;
+        }
+        footer{
+            
+            padding: 24px;
+            margin: 0;
+            height: 15px;
+            text-align: center;
+            font-family: 'Comic Neue', cursive;            /* "comic neve" -> is a font family  cursive -> is generic family */
+            text-transform: uppercase;
+            /* font-family: 'Roboto Condensed', sans-serif; */
+            background: black;
+            color:gold
+            /* text-transform: uppercase;              */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="right"> joining the two div will remove</div><div class="left"> the space and take 50% 50% width each</div>     <!--by joining the two div will remove the space and take the 50 50 width each-->
+
+    <footer>
+        practice set 4 joining the div 50% width. each font family generic family cursive &copy;
+    </footer>
+</body>
+</html>

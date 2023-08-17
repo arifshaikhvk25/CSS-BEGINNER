@@ -1,0 +1,50 @@
+<!-- em -> unit relative to the parent font size (eg if the parent 4px and em3 then it will be 12px it will get multiply by the em times from the parent font size) -->
+<!-- rem -> unit relative to the root font size (<html> tag) -->
+<!-- vw -> viewport width will set the width of any phone, tablet, computer (eg if the width: 50vw; it wil cover the 50% width of the any device)  -->
+<!-- vh -> viewport height will set the height of any phone, tablet, computer (eg if the height: 50vh; it will cover the 50% height of any device ) -->
+<!-- % -> unit relative to the parent element -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unit relative</title>
+
+    <style>
+        html{
+            /* font-size: 2rem; */
+        }
+
+        .container{
+            /* font-size: 15px; */
+        }
+
+        .box{
+            /* font-size:2em; */
+            /* font-size: 3rem; */
+            background: red;
+        }
+
+        .box2{
+            background: blue;
+            /* width: 25px; */
+            width: 50vw;
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p> This is a paragraph unit relative</p>
+        <div class="box">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, deserunt esse ut quo quaerat, possimus praesentium accusantium, suscipit culpa dolores sunt provident libero? Repudiandae, obcaecati.
+        </div>
+        <div class="box2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo doloremque voluptas delectus similique sint voluptatem.
+        </div>
+    </div>
+</body>
+</html>
