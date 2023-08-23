@@ -1,0 +1,57 @@
+<!-- CSS 2d transform method -->
+
+<!-- transform: translate(25px , 30px) rotate(90deg); shorthand -->
+<!-- transform: translate -> this will move the box to the forward x axis and y axis we can give the conditon to move according to us in x axis and y axis-->
+<!-- transform rotate -> will rotate the text eg(0.5turn will make vertically we can also give them from degree 45deg will make 45degree) -->
+<!-- transform origin -> default value fo this will be centre this commands to rotate from 0 top left bottom etc -->
+<!-- transform scale ->  ( we can also do it seperate transform: scaleX(2) transform: scaleY(2)) it makes the text size big x axis and y axis -->
+<!-- transform:skew -> this will skew from x axes to y axes (cross) and it will starts with transfrom origin -->
+
+<!-- CSS 3d transform method -->
+<!-- rotateX  -->
+<!-- rotateY  -->
+<!-- rotateZ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 2d 3d </title>
+
+    <style>
+        .container{
+            background-color: darkcyan;
+            height: 55vh;
+        }
+
+        .box{
+            display: inline-block;
+            border: 2px solid black;
+            transform: translate(25px , 90px);
+            /*transform: translate(25px , 30px) rotate(50deg);*/     /* this move the box forward x axis and y axis and rotate will rotate  */
+            transform-origin:0;                           /* this commands to rotae from top left*/
+            /* transform: scale(2,16);*/                         /* it makes the text size big x axis and y axis */
+            /*transform: scaleX(2);*/
+            /*transform: scaleY(2);*/
+            /*transform:skew(2deg, 5deg);*/                          /* this will skew from x to y axes */
+            /* transform: matrix(); */
+            transform: rotateX(45deg);
+            transform: rotateY(66deg);
+            transform: rotateZ(9deg);
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <img src="rollsroyce.image.jpg" alt="rollsroyce" width="160">
+
+        </div>
+    </div>
+</body>
+</html>

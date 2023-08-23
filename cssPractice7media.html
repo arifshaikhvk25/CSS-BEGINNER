@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7 Media Queries</title>
+
+    <style>
+
+            body{
+        background-color: black;
+        /* background-color:white; */
+        color: gold;
+    }
+
+        @media screen and (max-width:900px) {
+
+        body {
+            background: rgb(19, 143, 19);
+            /* color:black; */
+        }
+
+        .container{
+            background: rgb(213, 213, 87);
+            color: black;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+
+        body{
+            background-color: burlywood;
+            /* color: black; */
+        }
+        
+        .container{
+            background-color:blueviolet;
+            color: black;
+        }
+    }
+
+    /* .container{
+        background-color: aquamarine;
+    } */
+
+    /* body{
+        background-color: black;
+        background-color:white;
+        color: gold;
+    } */
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est eum deleniti sunt error quo, expedita officiis numquam culpa, cumque tempore blanditiis, facere ut asperiores id!
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!-- transition-delay -> this will take some time to start (eg if we gave 2s delay it will take 2s to start ) -->
+<!-- short hand of transition : transition-property transition-duration transition-timing-function  transition-delay -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+
+    <style>
+        .container{
+            background-color:rgb(74, 118, 156);
+            height: 25vh;
+        }
+
+        .box{
+            display: inline-block;
+            border: 3px solid rebeccapurple;
+        }
+
+        img{
+           
+             width: 30vw; 
+             height: 20vh;
+            /* transition-property: width;*/
+            /*transition-duration: 1s; */
+            /* transition-timing-function: steps(2, end); */
+            /* transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68); */
+            /* transition-delay: 2s; */                                        /*it will take 2s to start */
+            /*transition: width 2s cubic-bezier(.29, 1.01, 1, -0.68) 1s;*/   /*short hand of transition : transition-property transition-duration transition-timing-function  transition-delay ; */
+            transition: width 1s ease-in-out, height 3s ease-in;             /* we can skip transition delay*/
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="imagecar" src="rollsroyce.image.jpg" alt="rollsroyce" width="150">
+            <button id="carbtn">Toggle</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    imagecar.style.width = "20vw";    /* off set width property*/
+    imagecar.style.height = "20vh";
+
+    carbtn.addEventListener("click", ()=>{
+        imagecar.style.height = "60vh";
+        if(imagecar.style.width === "55vw"){
+            imagecar.style.width = "20vw"
+        }
+        
+        // imagecar.style.height = "16px";
+        else if(imagecar.style.width === "20vw"){
+            imagecar.style.width = "55vw"
+        }
+    })
+</script>
+</html>
