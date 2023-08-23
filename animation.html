@@ -1,0 +1,83 @@
+<!-- @keyframe -> animation is applied after naming the keyframe name to animate we can give {from to or 0% tp 100%} -->
+<!-- animation-name -> name which given in the keyframe in this i gave widthAnimate -->
+<!-- animation-duration -> time duration of the animation -->
+<!-- animation-delay -> delay time if we set delay 2s animation will start after 2s -->
+<!-- animation-iteration-count -> 3 times the animation will run its depends how many times we need  -->
+<!-- animation-direction -> this is set the direction of the animation -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color:rgb(206, 156, 81);
+        }
+
+        .box{
+            width: 20vw;
+            height: 40vh;
+            background-color:red;
+            color:whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: widthAnimate;             /* name of the animation which we given on the keyframes*/
+            animation-duration: 3s;                   /* it takes three seconds duration to complete the animation*/
+            animation-timing-function: ease-in-out;   /* ease in  out will go fast and come slowly */
+            animation-delay: 1s;                      /* it will take one seconds delay to start the animation*/
+            animation-iteration-count: 3;             /* this will do the animation 3 times is we set to infinite this will animate infinite times*/
+            animation-direction:reverse;              /* it will start from reverse */
+            animation: widthAnimate 3s ease-in-out 1s 3 alternate; /* shorthand animation: name duration timing-function delay iteration-count direction fill-mode;*/
+
+        }
+
+        img{
+            animation: carAnimate 1s ease-in 1s  infinite reverse ;
+        }
+
+        @keyframes widthAnimate {    /* we can do it by the from to */
+            from{
+                width: 20vw;
+                height: 40vh;
+            }
+
+            to{
+                width: 40vw;
+                height: 80vh;
+            }
+        }
+
+        @keyframes carAnimate {  /* we can do it by 0% to 100%* we can add intermediate value like what to do in 0%, 20% or in 100%*/
+            0%{
+                width: 20vw;
+                height: 40vh;
+            }
+
+            20%{
+                width: 30vw;
+                height: 60vh;
+            }
+
+            100%{
+                width: 40vw;
+                height: 80vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">this is css Animation
+            <!-- <img src="rollsroyce.image.jpg" alt="rollsroyce" width="140vw"> -->
+        </div>
+        <img src="rollsroyce.image.jpg" alt="rollsroyce" width="150vw">
+    </div>
+</body>
+</html>

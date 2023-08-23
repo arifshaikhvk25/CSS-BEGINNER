@@ -1,0 +1,44 @@
+<!-- transitions -->
+<!-- img:hover -> from this we can give some condition what we want if some one hover the image -->
+<!-- transition-duration -> this will set a duration when we hover the image hoow much time it will take to ease, ease-in, ease-out -->
+<!-- transition-timing-function -> is used to how fast slow and in what way the image should move or compresed when we hover -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+
+    <style>
+        .container{
+            background-color:wheat;
+            height: 35vh;
+        }
+
+        .box{
+            display: inline-block;
+            border: 3px solid red;
+        }
+        
+        img{
+            width: 450px;            
+            transition-property:width;
+            transition-duration: 3s;                   /* this set duration when we hover the image*/
+            transition-timing-function:steps(6,end);   /*slowly get compresed */
+        }
+
+        img:hover {
+            width: 150px;;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="rollsroyce.image.jpg" alt="rollsroyce" width="250">
+        </div>
+    </div>
+</body>
+</html>

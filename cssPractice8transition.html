@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 8 Practice set transition load bar</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       .transitionloadbar{
+           background-color: red;
+           height: 2vh;
+           width: 10vw;
+           transition-property: width;
+           transition-duration: 1s;
+           transition-timing-function:linear;
+       }
+
+       .transitionloadbar:hover{
+           width: 100vw;
+           height: 2vh;         
+       }
+
+        header{
+            background-color: black;
+            height: 20vh;
+        }
+
+        main{
+            background-color:steelblue;
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="transitionloadbar"></div>
+    <header></header>
+    <main></main>
+</body>
+</html>
